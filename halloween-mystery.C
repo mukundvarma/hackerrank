@@ -10,12 +10,12 @@ int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
     int ncases;
     cin >> ncases;
-    vector <int> ncuts;
-    int input;
+    vector <long> ncuts;
+    long input;
     while (cin >> input){
         ncuts.push_back(input);
     }
-    for (int i = 0; i < ncuts.size(); i++){
+    for (long i = 0; i < ncuts.size(); i++){
         if (ncuts[i]%2 == 0)
             cout << ncuts[i]*ncuts[i]/4 << endl;
         else
